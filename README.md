@@ -8,7 +8,7 @@ folder organization:
 
 data structure --skiplist --quadtree
 
-commandparser --commandparser --database
+commandparser --commandparser --database --point2 (main file)
 
 input/output --any input/output files
 
