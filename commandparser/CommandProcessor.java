@@ -56,7 +56,6 @@ public class CommandProcessor
         Scanner scan = new Scanner(file);
         String n;
         String[] s = new String[10];
-        //Database base = new Database(file);
         Database base = new Database();
         while (scan.hasNextLine())
         {
@@ -91,11 +90,6 @@ public class CommandProcessor
                 {
                     System.out.println("Point rejected:"
                         + " (" + x + ", " + y + ")");
-                }
-                else if ( w <= 0 || h <= 0)
-                {
-                    System.out.println("Point rejected:"
-                        + " (" + x + ", " + y  + ")");
                 }
                 else
                 {

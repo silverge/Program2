@@ -1,14 +1,15 @@
-//main class
+import java.io.File;
+import java.io.FileNotFoundException;
 
 /**
- * { your description of the project here }
- */
+ * This is the main executable file for project 2.
 
 /**
  * The class containing the main method, the entry point of the application.
  *
- * @author {your name here}
- * @version {put something here}
+ * @author {pacog94
+ *          silverg}
+ * @version {2/18/2016}
  */
 public class Point2
 {
@@ -19,9 +20,14 @@ public class Point2
      * @param args
      *            The name of the command file passed in as a command line
      *            argument.
+     * @throws FileNotFoundException
      */
-    public static void main(String[] args)
+    @SuppressWarnings("unused")
+    public static void main(String[] args) throws FileNotFoundException
     {
-        System.out.println("Hello, World");
+
+        File file = new File(args[0].trim());
+        CommandProcessor cp = new CommandProcessor(file);
     }
 }
+

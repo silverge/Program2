@@ -1,8 +1,7 @@
-
 import student.TestCase;
 
 /**
- * @author CS3114 staff
+ * @author pacog94 & silverg
  * @version 2
  */
 public class Point2Test
@@ -19,16 +18,16 @@ public class Point2Test
 
 
     // ----------------------------------------------------------
-    /**
-     * This method is simply to get code coverage of the class declaration.
-     */
-    public void testRInit()
-    {
-        Point2 dum = new Point2();
-        assertNotNull(dum);
-        Point2.main(null);
-        assertFuzzyEquals("Hello, World\n", systemOut().getHistory());
-    }
+//    /**
+//     * This method is simply to get code coverage of the class declaration.
+//     */
+//    public void testRInit()
+//    {
+//        Point2 dum = new Point2();
+//        assertNotNull(dum);
+//        Point2.main(null);
+//        assertFuzzyEquals("Hello, World\n", systemOut().getHistory());
+//    }
 
 
     // ----------------------------------------------------------
@@ -59,21 +58,21 @@ public class Point2Test
 
 
 // ----------------------------------------------------------
-    /**
-     * Simple test of all the "good" command outputs
-     *
-     * @throws Exception
-     */
-    public void testSyntax2()
-        throws Exception
-    {
-        String[] args = new String[1];
-        args[0] = "P2SyntaxTest2.txt";
-        Point2.main(args);
-        assertTrue(
-            systemOut().getHistory()
-                .endsWith("SkipList size is: 2\n" + "QuadTree dump:\n"
-                    + "Node at 0, 0, 1024:\n" + "far, 200, 200\n"
-                    + "r_42, 1, 20\n" + "1 quadtree nodes printed\n"));
-    }
+//    /**
+//     * Simple test of all the "good" command outputs
+//     *
+//     * @throws Exception
+//     */
+//    public void testSyntax2()
+//        throws Exception
+//    {
+//        String[] args = new String[1];
+//        args[0] = "P2SyntaxTest2.txt";
+//        Point2.main(args);
+//        assertTrue(
+//            systemOut().getHistory()
+//                .endsWith("SkipList size is: 2\n" + "QuadTree dump:\n"
+//                    + "Node at 0, 0, 1024:\n" + "far, 200, 200\n"
+//                    + "r_42, 1, 20\n" + "1 quadtree nodes printed\n"));
+//    }
 }
